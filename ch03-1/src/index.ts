@@ -33,3 +33,15 @@ function printMe(me: {name: string, age: number, etc?: boolean}) {
 }
 
 printMe(ai)
+
+interface IAgeable {
+    age?: number
+}
+
+function getAge(o: IAgeable) {
+    return o != undefined && o.age ? o.age : 0
+}
+
+console.log(getAge(undefined))
+console.log(getAge(null))
+console.log(getAge({age:32}))
