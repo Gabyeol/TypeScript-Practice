@@ -45,3 +45,12 @@ function getAge(o: IAgeable) {
 console.log(getAge(undefined))
 console.log(getAge(null))
 console.log(getAge({age:32}))
+
+
+class Person1 {
+    constructor(public name: string, public age?: number) {}
+}
+
+let jack1 : Person1 = new Person1('Jack', 32)
+
+console.log(jack1)
