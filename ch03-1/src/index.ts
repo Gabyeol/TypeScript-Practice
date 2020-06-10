@@ -54,3 +54,17 @@ class Person1 {
 let jack1 : Person1 = new Person1('Jack', 32)
 
 console.log(jack1)
+
+abstract class AbstractPerson2 {
+    abstract name: string
+    constructor(public age?: number) {}
+}
+
+class Person2 extends AbstractPerson2 {
+    constructor(public name: string, age?: number) {
+        super(age)
+    }
+}
+
+let jack2: Person2 = new Person2('Jack', 32)
+console.log(jack2)
