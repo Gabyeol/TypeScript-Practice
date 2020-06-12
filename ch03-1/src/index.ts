@@ -68,3 +68,9 @@ class Person2 extends AbstractPerson2 {
 
 let jack2: Person2 = new Person2('Jack', 32)
 // console.log(jack2)
+
+const isGreater = (a: number, b: number): boolean => a > b
+console.log(isGreater(10, 20))
+
+const f = (callback: () => void): void => callback()
+f(() => console.log('callback fucntion'))
