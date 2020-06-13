@@ -74,3 +74,16 @@ console.log(isGreater(10, 20))
 
 const f = (callback: () => void): void => callback()
 f(() => console.log('callback fucntion'))
+
+let array = new Array
+array.push(1)
+array.push('a')
+
+console.log(array)
+
+const split = (str: string, delim: string = ''): string[] => str.split(delim)
+
+console.log(
+    split('hello'),
+    split('h_e_l_l_o', '_')
+)
