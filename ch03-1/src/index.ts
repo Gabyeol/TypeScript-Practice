@@ -87,3 +87,13 @@ console.log(
     split('hello'),
     split('h_e_l_l_o', '_')
 )
+
+
+let names = ['Jack', 'Jane', 'Steve']
+for(let index in names) {
+    const name = names[index]
+    console.log(`[${index}]: ${name}`)
+}
+for(let name of names) {
+    console.log(`${name}`)
+}
