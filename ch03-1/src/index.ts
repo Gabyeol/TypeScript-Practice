@@ -70,30 +70,30 @@ let jack2: Person2 = new Person2('Jack', 32)
 // console.log(jack2)
 
 const isGreater = (a: number, b: number): boolean => a > b
-console.log(isGreater(10, 20))
+// console.log(isGreater(10, 20))
 
 const f = (callback: () => void): void => callback()
-f(() => console.log('callback fucntion'))
+// f(() => console.log('callback fucntion'))
 
 let array = new Array
 array.push(1)
 array.push('a')
 
-console.log(array)
+// console.log(array)
 
 const split = (str: string, delim: string = ''): string[] => str.split(delim)
 
-console.log(
-    split('hello'),
-    split('h_e_l_l_o', '_')
-)
+// console.log(
+//     split('hello'),
+//     split('h_e_l_l_o', '_')
+// )
 
 
 let names = ['Jack', 'Jane', 'Steve']
 for(let index in names) {
     const name = names[index]
-    console.log(`[${index}]: ${name}`)
+    // console.log(`[${index}]: ${name}`)
 }
 for(let name of names) {
-    console.log(`${name}`)
+    // console.log(`${name}`)
 }
