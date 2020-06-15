@@ -97,3 +97,11 @@ for(let index in names) {
 for(let name of names) {
     // console.log(`${name}`)
 }
+
+const arrayLength = <T>(array: T[]): number => array.length
+const isEmpty = <T>(array: T[]): boolean => arrayLength<T>(array) == 0
+
+console.log(
+    isEmpty([]),
+    isEmpty([1,2])
+)
