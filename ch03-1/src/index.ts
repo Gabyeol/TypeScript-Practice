@@ -14,9 +14,9 @@ interface IPerson {
 }
 
 let person1: IPerson = {name: "Jack", age: 32, etc: true}
-console.log(person1)
+// console.log(person1)
 person1 = {name: "Jane", age: 25}
-console.log(person1)
+// console.log(person1)
 
 let ai: {
     name: string
@@ -101,7 +101,7 @@ for(let name of names) {
 const arrayLength = <T>(array: T[]): number => array.length
 const isEmpty = <T>(array: T[]): boolean => arrayLength<T>(array) == 0
 
-console.log(
-    isEmpty([]),
-    isEmpty([1,2])
-)
+// console.log(
+//     isEmpty([]),
+//     isEmpty([1,2])
+// )
