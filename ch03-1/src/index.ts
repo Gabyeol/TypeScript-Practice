@@ -105,3 +105,13 @@ const isEmpty = <T>(array: T[]): boolean => arrayLength<T>(array) == 0
 //     isEmpty([]),
 //     isEmpty([1,2])
 // )
+
+const multiply = (result, val) => result * val
+let numbers: number [] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let tempResult = numbers
+    .filter(val => val % 2 != 0)
+    .map(val => val * val)
+    .reduce(multiply, 1)
+
+let mathResult = Math.round(Math.sqrt(tempResult))
+console.log(mathResult)
