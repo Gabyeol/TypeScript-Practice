@@ -115,3 +115,9 @@ let tempResult = numbers
 
 let mathResult = Math.round(Math.sqrt(tempResult))
 console.log(mathResult)
+
+
+const arr: number[] = [1,2,3,4]
+type ResultType = [boolean, string]
+const tuple: ResultType = [true, 'the result is ok']
+tuple.forEach(val => console.log(val.toString()))
