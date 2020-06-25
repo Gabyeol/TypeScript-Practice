@@ -29,3 +29,18 @@ while(1) {
 
 for(let value of rangeGenerator(4, 6+1))
     console.log(value)
+
+
+function* gen12() {
+    yield 1
+    yield 2
+}
+
+function* gen12345() {
+    yield* gen12()
+    yield* [3, 4]
+    yield 5
+}
+
+for(let value of gen12345())
+    console.log(value)
