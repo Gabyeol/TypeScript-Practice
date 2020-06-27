@@ -24,11 +24,11 @@ let iterator = rangeGenerator(1, 3 + 1)
 while(1) {
     const {value, done} = iterator.next()
     if(done) break
-    console.log(value)
+    // console.log(value)
 }
 
-for(let value of rangeGenerator(4, 6+1))
-    console.log(value)
+// for(let value of rangeGenerator(4, 6+1))
+    // console.log(value)
 
 
 function* gen12() {
@@ -42,8 +42,8 @@ function* gen12345() {
     yield 5
 }
 
-for(let value of gen12345())
-    console.log(value)
+// for(let value of gen12345())
+//     console.log(value)
 
 
 const createRangeIterable = (from: number, to: number) => {
