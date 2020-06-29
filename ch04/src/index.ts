@@ -76,3 +76,10 @@ const composedFunction = compose(h, g, f)
 console.log(
     composedFunction('x')
 )
+
+type FirstOrderFunc<T,R> = (T) => R
+type SecondOrderFunc<T,R> = (T) => FirstOrderFunc<T,R>
+type ThirdOrderFunc<T,R> = (T) => SecondOrderFunc<T,R>
+
+const inc: FirstOrderFunc<number, number> = (x: number): number => x + 1
+console.log(inc(1))
