@@ -83,3 +83,20 @@ type ThirdOrderFunc<T,R> = (T) => SecondOrderFunc<T,R>
 
 const inc: FirstOrderFunc<number, number> = (x: number): number => x + 1
 console.log(inc(1))
+
+const add: SecondOrderFunc<number, number> =
+    (x: number): FirstOrderFunc<number, number> =>
+    (y: number): number => x + y
+
+console.log(
+    add(1)(2)
+)
+
+const add3: ThirdOrderFunc<number, number> =
+    (x: number): SecondOrderFunc<number, number> =>
+    (y: number): FirstOrderFunc<number, number> =>
+    (z: number): number => x + y + z
+
+console.log(
+    add3(1)(2)(3)
+)
